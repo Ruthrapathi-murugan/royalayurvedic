@@ -1,0 +1,61 @@
+/* src/components/Contact.css */
+
+.contact-section {
+  background-color: #f4faff;
+  padding: 60px 0;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #777;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.section-title .highlight {
+  color: #f4a300;
+}
+
+.contact-heading {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-section i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+form input,
+form textarea {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+
+form button {
+  background-color: #f4a300;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #e09500;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}

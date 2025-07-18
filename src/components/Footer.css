@@ -1,0 +1,28 @@
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  border-top: 3px solid #9b3f3f;
+}
+
+.footer-brand {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #f4c10f;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.social-icons a {
+  font-weight: 500;
+}
