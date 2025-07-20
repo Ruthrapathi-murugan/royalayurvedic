@@ -13,6 +13,7 @@ const ClinicPage = () => {
     title: 'Royal Ayurveda & Varma Clinic, Palani',
     notice1: 'This treatment center is exclusively for women – Expert care in this field.',
     notice2: 'Only for Females – We have very special expertise in this field.',
+    notice3: ' -Doorstep service available',
     call: 'Mobile Number',
     servicesTitle: 'Our Clinic Offers',
     services: [
@@ -39,6 +40,7 @@ const ClinicPage = () => {
     <h1 className='text-center'><u>Women's Only</u></h1>
     👩‍🦰 {content.notice1} <br />
     <span>{content.notice2}</span>
+    <span className="d-block"><h4><i class="bi bi-house-door">{content.notice3}</i></h4></span>
   </div>
 </div>
 

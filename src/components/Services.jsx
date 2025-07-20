@@ -1,7 +1,8 @@
 import React from "react";
 import './Services.css';
+import services from "../data/services";
 
-const services = [
+const services1 = [
   {
     id: 1,
     title: "Ayurvedic Oil Massage",
@@ -70,7 +71,7 @@ const Services = () => {
     <div className="services-container">
       <h2 className="services-title">Our Services</h2>
       <div className="services-grid">
-        {services.map(service => (
+        {services1.map(service => (
           <div key={service.id} className="service-card">
             <div className="icon">{service.icon}</div>
             <h3>{service.title}</h3>
