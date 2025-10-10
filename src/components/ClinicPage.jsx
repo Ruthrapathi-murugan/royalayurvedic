@@ -7,6 +7,7 @@ import img4 from '../assets/img4.jpg';
 import { Link } from 'react-router-dom';
 import services from '../data/services';
 import './ClinicPage.css'; // Custom CSS for styling
+import AyurvedicPackages from './AyurvedicPackages';
 
 const ClinicPage = () => {
   const content = {
@@ -36,6 +37,7 @@ const ClinicPage = () => {
 
       {/* Notice */}
     <div className="notice-box notice-bg mx-auto mt-1 mb-1 text-white">
+    
   <div className="notice-content">
     <h1 className='text-center'><u>Women's Only</u></h1>
     👩‍🦰 {content.notice1} <br />
@@ -62,6 +64,7 @@ const ClinicPage = () => {
     ))}
   </div>
 </div>
+<AyurvedicPackages/>
 
 
       {/* Note */}

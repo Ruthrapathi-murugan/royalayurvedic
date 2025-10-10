@@ -1,0 +1,29 @@
+.packages-page {
+  background-color: #f9f9f9;
+}
+
+.program h3 {
+  font-weight: 700;
+  border-left: 5px solid #198754;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.program ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.program ul li::before {
+  content: "✔ ";
+  color: #198754;
+}
+
+.btn-success {
+  background-color: #198754;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #146c43;
+}

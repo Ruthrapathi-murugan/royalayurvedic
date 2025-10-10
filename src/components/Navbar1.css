@@ -27,3 +27,12 @@
   transform: translateY(-2px);
   color: #ffeb3b !important;
 }
+
+/* Hover dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* optional: removes gap */
+
+  background-color: #27ae60;
+  color: black;
+}

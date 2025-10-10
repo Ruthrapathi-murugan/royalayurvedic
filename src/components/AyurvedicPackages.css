@@ -1,0 +1,60 @@
+.treatment-section {
+  background-color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.treatment-section h2 {
+  font-family: "Playfair Display", serif;
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.treatment-section p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.treatment-card {
+  background-color: #fdf8f3; /* light beige */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.treatment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.treatment-card img {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.treatment-card .content {
+  padding: 20px;
+}
+
+.treatment-card h5 {
+  color: #2c2c2c;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+}
+
+.treatment-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.more-btn {
+  background-color: #6ab04c;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+  background-color: #58a13f;
+}
