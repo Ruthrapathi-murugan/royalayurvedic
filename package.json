@@ -5,9 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-     "build": "vite build && node generate-sitemap.js",
+    "build": "vite build && node generate-sitemap.js",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "reactSnap": {
+    "inlineCss": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "dependencies": {
     "bootstrap": "^5.3.7",
@@ -16,6 +23,7 @@
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",
+    "react-snap": "^1.23.0",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {
