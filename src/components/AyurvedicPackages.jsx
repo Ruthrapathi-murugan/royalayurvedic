@@ -2,7 +2,7 @@ import React from "react";
 import "./AyurvedicPackages.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import weightloss from "../assets/Ayurvedic-Weight-loss-Treatment.jpg";
+import weightloss from "../assets/men.jpg";
 import stressrelief from "../assets/Shirodhara.jpg";
 import arthritis from "../assets/Arthritis.jpg";
 import skincare from "../assets/skin-treatment-treat.jpg";
