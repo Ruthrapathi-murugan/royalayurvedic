@@ -30,7 +30,7 @@ const Contact = () => {
           <div className="col-md-6 mb-4">
             <iframe
               title="Royal Ayurvedic Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.535201836338!2d77.52165581474968!3d10.459187792533778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b072262a438db15%3A0x6f6c97f4f8e4235b!2sRoyal%20Ayurvedic%20Treatment!5e0!3m2!1sen!2sin!4v1654536600000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d346.8109978475445!2d77.52209462451165!3d10.443895358351728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9de66ce6a9173%3A0x57ac49a0f712d146!2sPVT%20RESIDENCY!5e0!3m2!1sen!2sin!4v1761297406018!5m2!1sen!2sin"
               width="100%"
               height="320"
               style={{ border: 0 }}
