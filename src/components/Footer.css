@@ -1,28 +1,243 @@
-/* src/components/Footer.css */
+/* ============================================
+   Premium Footer Styles
+   ============================================ */
 
-.footer {
-  background-color: #1e1e1e;
-  color: #fff;
-  font-size: 15px;
-  border-top: 3px solid #9b3f3f;
+.footer-premium {
+  background: linear-gradient(170deg, #0a1f0a 0%, #112211 40%, #1a2e1a 100%);
+  color: #c8d6c8;
+  margin-top: 60px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Outfit', sans-serif;
 }
 
-.footer-brand {
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 10px;
+/* Decorative gold accent bar at the top */
+.footer-accent-bar {
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #d4af37 20%, #f0d060 50%, #d4af37 80%, transparent);
 }
 
-.footer-link {
-  color: #f4c10f;
+/* Subtle background pattern overlay */
+.footer-premium::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 15% 85%, rgba(46, 125, 50, 0.08) 0%, transparent 50%),
+              radial-gradient(circle at 85% 15%, rgba(212, 175, 55, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ---- Brand / Logo Area ---- */
+.footer-logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #d4af37 0%, #f5e6a3 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.footer-about {
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: #9eb89e;
+  margin-bottom: 22px;
+}
+
+/* ---- Social Icons ---- */
+.footer-social-row {
+  display: flex;
+  gap: 12px;
+}
+
+.social-circle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  font-size: 1.1rem;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
-.footer-link:hover {
-  text-decoration: underline;
-  color: #fff;
+.social-circle:hover {
+  background: linear-gradient(135deg, #d4af37, #c49b2a);
+  color: #0a1f0a;
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+  border-color: transparent;
 }
 
-.social-icons a {
-  font-weight: 500;
+/* ---- Column Headings ---- */
+.footer-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 22px;
+  position: relative;
+  padding-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35px;
+  height: 3px;
+  background: linear-gradient(90deg, #d4af37, transparent);
+  border-radius: 3px;
+}
+
+/* ---- Link Lists ---- */
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links-list li {
+  margin-bottom: 10px;
+}
+
+.footer-links-list li a {
+  color: #9eb89e;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding-left: 0;
+}
+
+.footer-links-list li a::before {
+  content: '›';
+  margin-right: 8px;
+  font-size: 1.25rem;
+  color: #d4af37;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+
+.footer-links-list li a:hover {
+  color: #d4af37;
+  padding-left: 6px;
+}
+
+.footer-links-list li a:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ---- Contact Items ---- */
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.footer-contact-item i {
+  color: #d4af37;
+  font-size: 1rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-contact-item a {
+  color: #a5d6a7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+  color: #d4af37;
+}
+
+/* ---- Bottom Bar ---- */
+.footer-bottom-bar {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+  font-size: 0.88rem;
+  color: #6b836b;
+  position: relative;
+  z-index: 1;
+}
+
+.creator-text {
+  font-size: 0.88rem;
+  color: #6b836b;
+}
+
+.creator-link {
+  color: #d4af37;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.creator-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+}
+
+.creator-link:hover {
+  color: #f5e6a3;
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+}
+
+.creator-link:hover::after {
+  width: 100%;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .footer-premium .row {
+    text-align: center;
+  }
+
+  .footer-heading::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-social-row {
+    justify-content: center;
+  }
+
+  .footer-contact-item {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .footer-bottom-bar .row > div {
+    text-align: center !important;
+  }
 }

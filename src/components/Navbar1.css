@@ -36,3 +36,13 @@
   background-color: #27ae60;
   color: black;
 }
+
+/* Keep brand + hamburger on same row in mobile */
+@media (max-width: 576px) {
+  .custom-navbar .container-fluid {
+    flex-wrap: nowrap;
+  }
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+}
